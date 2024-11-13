@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="shortcut icon" href="images/icon.png" />
+    <script src="main.js"></script>
+    <title>Sản Phẩm</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="trangchu.html"><img id="logo" src="images/logo-1.png" /></a>
+      <nav class="nav">
+        <a href="trangchu.html">Trang Chủ</a>
+        <a href="gioithieu.html">Giới Thiệu</a>
+        <a class="active" href="sanpham.html">Sản Phẩm</a>
+        <a href="datban.html">Đặt Bàn</a>
+        <a href="dangnhap.html">Đăng Nhập</a>
+        <a href="dangky.html">Đăng Ký</a>
+        <a href="lienhe.html">Liên Hệ</a>
+      </nav>
+      <div id="look">
+        <i class="fa fa-search"></i>
+      </div>
+    </header>
+
+    <main class="ohang">
+      <div class="danh-sach-san-pham">
+        <div class="san-pham">
+          <h2>Tôm Nướng</h2>
+          <img src="images/haisan_tomhum.jpg" alt="Tôm" />
+          <p>Giá: 200.000 VNĐ/món</p>
+          <div class="control-so-luong">
+            <button onclick="updateQuantity('tomy', -1)">-</button>
+            <input
+              type="number"
+              id="tomy"
+              class="input-so-luong"
+              min="0"
+              value="0"
+              readonly
+            />
+            <button onclick="updateQuantity('tomy', 1)">+</button>
+          </div>
+        </div>
+        <div class="san-pham">
+          <h2>Cua Luột</h2>
+          <img src="images/haisan_cua.jpg" alt="Cua" />
+          <p>Giá: 300.000 VNĐ/món</p>
+          <div class="control-so-luong">
+            <button onclick="updateQuantity('cuay', -1)">-</button>
+            <input
+              type="number"
+              id="cuay"
+              class="input-so-luong"
+              min="0"
+              value="0"
+              readonly
+            />
+            <button onclick="updateQuantity('cuay', 1)">+</button>
+          </div>
+        </div>
+        <div class="san-pham">
+          <h2>Cá Nướng</h2>
+          <img src="images/canuong.png" alt="Cá" />
+          <p>Giá: 150.000 VNĐ/món</p>
+          <div class="control-so-luong">
+            <button onclick="updateQuantity('cay', -1)">-</button>
+            <input
+              type="number"
+              id="cay"
+              class="input-so-luong"
+              min="0"
+              value="0"
+              readonly
+            />
+            <button onclick="updateQuantity('cay', 1)">+</button>
+          </div>
+        </div>
+        <div class="san-pham">
+          <h2>Ốc Hấp</h2>
+          <img src="images/ochap.png" alt="Ốc" />
+          <p>Giá: 250.000 VNĐ/món</p>
+          <div class="control-so-luong">
+            <button onclick="updateQuantity('ocy', -1)">-</button>
+            <input
+              type="number"
+              id="ocy"
+              class="input-so-luong"
+              min="0"
+              value="0"
+              readonly
+            />
+            <button onclick="updateQuantity('ocy', 1)">+</button>
+          </div>
+        </div>
+        <div class="san-pham">
+          <h2>Hào Nướng</h2>
+          <img src="images/haonuong.png" alt="Hào" />
+          <p>Giá: 200.000 VNĐ/món</p>
+          <div class="control-so-luong">
+            <button onclick="updateQuantity('haoy', -1)">-</button>
+            <input
+              type="number"
+              id="haoy"
+              class="input-so-luong"
+              min="0"
+              value="0"
+              readonly
+            />
+            <button onclick="updateQuantity('ocy', 1)">+</button>
+          </div>
+        </div>
+        <div class="san-pham">
+          <h2>Mực Nướng</h2>
+          <img src="images/mucnuong.png" alt="Mực" />
+          <p>Giá: 350.000 VNĐ/món</p>
+          <div class="control-so-luong">
+            <button onclick="updateQuantity('mucy', -1)">-</button>
+            <input
+              type="number"
+              id="mucy"
+              class="input-so-luong"
+              min="0"
+              value="0"
+              readonly
+            />
+            <button onclick="updateQuantity('mucy', 1)">+</button>
+          </div>
+        </div>
+        <div class="san-pham">
+          <h2>Ghẹ Rang</h2>
+          <img src="images/gherangpng.png" alt="Ghẹ" />
+          <p>Giá: 500.000 VNĐ/món</p>
+          <div class="control-so-luong">
+            <button onclick="updateQuantity('ghey', -1)">-</button>
+            <input
+              type="number"
+              id="ghey"
+              class="input-so-luong"
+              min="0"
+              value="0"
+              readonly
+            />
+            <button onclick="updateQuantity('ghey', 1)">+</button>
+          </div>
+        </div>
+        <div class="san-pham">
+          <h2>Lẩu Cá</h2>
+          <img src="images/lauca.png" alt="Lẩu" />
+          <p>Giá: 500.000 VNĐ/món</p>
+          <div class="control-so-luong">
+            <button onclick="updateQuantity('lauy', -1)">-</button>
+            <input
+              type="number"
+              id="lauy"
+              class="input-so-luong"
+              min="0"
+              value="0"
+              readonly
+            />
+            <button onclick="updateQuantity('lauy', 1)">+</button>
+          </div>
+        </div>
+        <div class="san-pham">
+          <h2>Nghêu Hấp</h2>
+          <img src="images/ngheuhap.png" alt="Nghêu" />
+          <p>Giá: 150.000 VNĐ/món</p>
+          <div class="control-so-luong">
+            <button onclick="updateQuantity('ngheuy', -1)">-</button>
+            <input
+              type="number"
+              id="ngheuy"
+              class="input-so-luong"
+              min="0"
+              value="0"
+              readonly
+            />
+            <button onclick="updateQuantity('ngheuy', 1)">+</button>
+          </div>
+        </div>
+        
+      </div>
+     
+      <article class="article-san-pham">
+        <div class="gio-hang">
+          <h2>Giỏ Hàng</h2>
+          <div id="cartItems"></div>
+          <p id="totalPrice">Tổng giá: 0 VNĐ</p>
+          <p id="tax">Thuế (10%): 0 VNĐ</p>
+          <p id="finalPrice">Tổng cộng: 0 VNĐ</p>
+          <div class="form-dat-hang">
+            <button class="nut" onclick="addToCart()">Thêm giỏ hàng</button>
+            <button class="nut" onclick="placeOrder()">Đặt Hàng</button>
+          </div>
+        </div>
+      </article>
+    </main>
+    
+    <footer>
+      <div class="footer-container">
+        <div class="footer-info">
+          <img
+            id="footer_img"
+            src="images/logo_haidang.png"
+            alt="Logo Hải Đăng"
+          />
+          <p class="footer-title">TẬP ĐOÀN NHÀ HÀNG HẢI ĐĂNG</p>
+          <p>HẢI ĐĂNG GROUP</p>
+        </div>
+        <div class="footer-contact">
+          <p>
+            Điện thoại: <a href="tel:0379396243">0379396243</a> -
+            <a href="tel:08888888888">08888888888</a>
+          </p>
+          <p>
+            Hotline: <a href="tel:0889591818">088.959.1818</a> -
+            <a href="tel:0906261345">090.6261.345</a>
+          </p>
+          <p>
+            Email:
+            <a href="mailto:haidangle884@gmail.com">haidangle884@gmail.com</a>
+          </p>
+          <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.tiktok.com" target="_blank"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a id="return" href="#logo"><i class="fa-solid fa-caret-up"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

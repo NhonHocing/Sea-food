@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css" />
+    <link rel="icon" href="images/icon.png" />
+    <title>Liên Hệ</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="trangchu.html"><img id="logo" src="images/logo-1.png" /></a>
+      <nav class="nav">
+        <a href="trangchu.html">Trang Chủ</a>
+        <a href="gioithieu.html">Giới Thiệu</a>
+        <a href="sanpham.html">Sản Phẩm</a>
+        <a href="datban.html">Đặt Bàn</a>
+        <a href="dangnhap.html">Đăng Nhập</a>
+        <a href="dangky.html">Đăng Ký</a>
+        <a class="active" href="lienhe.html">Liên Hệ</a>
+      </nav>
+    </header>
+
+    <main>
+      <fieldset class="fieldset">
+        <legend>Liên Hệ</legend>
+        <form method="post" action="trangchu.html">
+          <div class="lienhe">
+            <label for="name">Họ tên</label>
+            <input
+              id="name"
+              type="text"
+              placeholder="Nhập họ và tên"
+              required
+            />
+
+            <label for="phone">SĐT</label>
+            <input
+              id="phone"
+              type="text"
+              placeholder="Nhập số điện thoại"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Nhập email" required />
+
+            <label for="subject">Chủ đề liên hệ</label>
+            <select id="subject" required>
+              <option value="product">Về sản phẩm</option>
+              <option value="membership">Ưu đãi thành viên</option>
+              <option value="recruitment">Thông tin tuyển dụng</option>
+            </select>
+
+            <label for="message">Nội dung tư vấn</label>
+            <textarea
+              id="message"
+              placeholder="Nhập nội dung tư vấn"
+              required
+            ></textarea>
+
+            <button type="submit" class="btn-submit">Gửi liên hệ</button>
+          </div>
+        </form>
+      </fieldset>
+      <div id="dat">
+
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-info">
+          <img
+            id="footer_img"
+            src="images/logo_haidang.png"
+            alt="Logo Hải Đăng"
+          />
+          <p class="footer-title">TẬP ĐOÀN NHÀ HÀNG HẢI ĐĂNG</p>
+          <p>HẢI ĐĂNG GROUP</p>
+        </div>
+        <div class="footer-contact">
+          <p>
+            Điện thoại: <a href="tel:0379396243">0379396243</a> -
+            <a href="tel:08888888888">08888888888</a>
+          </p>
+          <p>
+            Hotline: <a href="tel:0889591818">088.959.1818</a> -
+            <a href="tel:0906261345">090.6261.345</a>
+          </p>
+          <p>
+            Email:
+            <a href="mailto:haidangle884@gmail.com">haidangle884@gmail.com</a>
+          </p>
+          <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.tiktok.com" target="_blank"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a id="return" href="#logo"><i class="fa-solid fa-caret-up"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
